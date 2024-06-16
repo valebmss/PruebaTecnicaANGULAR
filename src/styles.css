@@ -5,10 +5,10 @@
 .skill-card {
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
-  
-.skill-card:hover {
+  .skill-card:hover,
+  .skill-card:focus,
+  .skill-card:focus-visible {
     transform: scale(1.05); 
     background-image: linear-gradient(to top right, #FF5733, #FFC300); 
     color: white;
-}
-  
+  }
