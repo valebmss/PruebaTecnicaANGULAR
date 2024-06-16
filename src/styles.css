@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skill-card {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+.skill-card:hover {
+    transform: scale(1.05); 
+    background-image: linear-gradient(to top right, #FF5733, #FFC300); 
+    color: white;
+}
+  

@@ -1,0 +1,21 @@
+<aside  class="side-menu bg-gray-900 text-gray-100 w-64 h-screen fixed top-0 left-0 overflow-y-auto shadow-lg">
+  <div class="p-4">
+    <h2 class="text-xl font-semibold mb-4">Menú</h2>
+    <ul>
+      <li class="mb-2">
+        <a href="inicio/home"  class="menu-link block p-2 transition duration-300 ease-in-out hover:bg-gray-800 cursor-pointer rounded-md">Inicio</a>
+      </li>
+      <li class="mb-2">
+        <a href="inicio/profile" class="menu-link block p-2 transition duration-300 ease-in-out hover:bg-gray-800 cursor-pointer rounded-md">Perfil</a>
+      </li>
+      <li>
+        <a (click)="logout()" class="menu-link block p-2 transition duration-300 ease-in-out hover:bg-gray-800 cursor-pointer rounded-md  text-red-500">Cerrar Sesión</a>
+      </li>
+    </ul>
+    <div class="absolute bottom-0 left-0 right-0 p-4">
+      <img [src]="getAvatarUrl()" alt="Avatar del usuario" class="rounded-full w-12 h-12">
+      <p class="text-gray-500">{{ getUsername() }}</p>
+    </div>
+  </div>
+  
+</aside>
