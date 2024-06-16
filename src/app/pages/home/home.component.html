@@ -1,31 +1,29 @@
 <div *ngIf="authService.isLoggedIn(); else loggedOutTemplate">
-    <div class="mt-12">
+    <div class="mt-12 px-4">
       <h2 class="text-2xl font-bold text-gray-700 mb-4">Perfil</h2>
-      <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
-        <a href="inicio/profile">
-          <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md animate__animated animate__fadeIn">
-            <div class="bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-red-600 to-red-400 text-white shadow-red-500/40 shadow-lg absolute -mt-4 grid h-16 w-16 place-items-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt="">
-            </div>
-            <div class="p-4 text-right">
-              <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Perfil</p>
-              <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">Valeria Larrea</h4>
-            </div>
-            <div class="border-t border-blue-gray-50 p-4">
-              <p class="block antialiased font-sans text-base leading-relaxed font-bold text-blue-gray-600">Desarrolladora web</p>
-            </div>
+      <div class="grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
+        <a href="inicio/profile" class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md animate__animated animate__fadeIn">
+          <div class="bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-red-600 to-red-400 text-white shadow-red-500/40 shadow-lg absolute -mt-4 grid h-16 w-16 place-items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt="">
+          </div>
+          <div class="p-4 text-center">
+            <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Perfil</p>
+            <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">Valeria Larrea</h4>
+          </div>
+          <div class="border-t border-blue-gray-50 p-4">
+            <p class="block antialiased font-sans text-base leading-relaxed font-bold text-blue-gray-600">Desarrolladora web</p>
           </div>
         </a>
-        <a href="inicio/profile" class="relative flex flex-col bg-clip-border  animate__animated animate__fadeIn ">
-            <div class="p-4 text-right">
-              <h4 class="block antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-red-600">Hello world... let's go to work</h4>
-            </div>
-          </a>
+        <a href="inicio/profile" class="relative flex flex-col bg-clip-border animate__animated animate__fadeIn">
+          <div class="p-4 text-center">
+            <h4 class="block antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-red-600">Hello world... let's go to work</h4>
+          </div>
+        </a>
       </div>
   
       <!-- Habilidades -->
       <div class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-700 mb-4">Habilidades Frontend</h2>
+        <h2 class="text-2xl font-bold text-gray-700 mb-4 mt-8">Habilidades Frontend</h2>
         <div class="grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
           <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md animate__animated animate__fadeInUp skill-card">
             <div class="p-4 text-center">
@@ -87,8 +85,8 @@
   
   <ng-template #loggedOutTemplate>
     <div class="text-center mt-24">
-      <p class="text-3xl text-red-600">You are not authorized to view this page</p>
-      <a routerLink="/" class="mt-4 text-blue-500 hover:text-blue-700">Return to Home</a>
+      <p class="text-3xl text-red-600">No tienes autorización para ver esta página</p>
+      <a routerLink="/" class="mt-4 text-blue-500 hover:text-blue-700">Volver a inicio</a>
     </div>
   </ng-template>
   
